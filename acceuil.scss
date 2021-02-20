@@ -20,13 +20,13 @@ body {
 }
 
 .localisation {
-  height: 50px;
+  height: 4em;
   width: auto;
   background-color: #eaeaea;
   border-top: 2px solid #cfcfcf;
-  .localisation__txt {
+  &__txt {
     text-align: center;
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 
@@ -34,73 +34,77 @@ body {
   text-align: center;
   height: 240px;
   background-color: #f6f6f6;
-  font-size: 17px;
-  padding: 10px 40px 50px 40px;
-}
-.discover p {
-  color: gray;
-  font-weight: lighter;
   font-size: 19px;
+  padding: 10px 40px 50px 40px;
+  & p {
+    color: gray;
+    font-weight: lighter;
+    font-size: 19px;
+  }
+  &__button {
+    background-image: linear-gradient(#ff79da, #9356dc);
+    width: 15em;
+    height: 60px;
+    border-radius: 30px;
+    margin-top: 37px;
+    border: none;
+    font-size: 19px;
+    font-weight: 500;
+    color: white;
+  }
 }
-.discover__button {
-  background-image: linear-gradient(#ff79da, #9356dc);
-  width: 215px;
-  height: 50px;
-  border-radius: 30px;
-  margin-top: 37px;
-  border: none;
-  font-size: 17px;
-  color: white;
-}
+
+
+/* fonctionnement section */
 
 .fonctionnement {
   margin-bottom: 4rem;
   width: 90%;
   margin: auto;
-}
-.fonctionnement__titre {
-  margin-top: 3rem;
-  padding-left: 1rem;
-}
-.fonctionnement__card {
-  display: flex;
-  margin: auto;
-  width: 90%;
-  height: 4.5rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  border-radius: 1rem;
-  background-color: #eeeeee;
-  align-items: center;
-  box-shadow: 1px 2px 15px lightgray;
+  &__titre {
+    margin-top: 3rem;
+    padding-left: 1rem;
+  }
+  &__card {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    height: 4.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    background-color: #eeeeee;
+    align-items: center;
+    box-shadow: 1px 2px 15px lightgray;
+    &:hover {
+      background-color: #f5edff;
+    }
+    &__num {
+      background-color: #9356dc;
+      color: white;
+      width: 1.5em;
+      height: 1.7rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -0.7rem;
+    }
+    &__icone {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      color: #7c7c7c;
+      font-size: 1.2rem;
+    }
+  }
+
 }
 
-.fonctionnement__card__num {
-  background-color: #9356dc;
-  color: white;
-  width: 1.5em;
-  height: 1.7rem;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: -0.7rem;
-}
-.fonctionnement__card__icone {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  color: #7c7c7c;
-  font-size: 1.2rem;
-}
-.fonctionnement__card:hover {
-  background-color: #f5edff;
-}
+
 .fonctionnement__card:hover > .fonctionnement__card__icone {
   color: #9356dc;
 }
-.fonctionnement__card:active {
-  background-color: #f2eafb;
-}
+
 
 /* restaurnts section */
 

@@ -22,22 +22,22 @@ body {
 }
 
 .localisation {
-  height: 50px;
+  height: 4em;
   width: auto;
   background-color: #eaeaea;
   border-top: 2px solid #cfcfcf;
 }
 
-.localisation .localisation__txt {
+.localisation__txt {
   text-align: center;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .discover {
   text-align: center;
   height: 240px;
   background-color: #f6f6f6;
-  font-size: 17px;
+  font-size: 19px;
   padding: 10px 40px 50px 40px;
 }
 
@@ -50,15 +50,17 @@ body {
 .discover__button {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background-image: linear-gradient(#ff79da, #9356dc);
-  width: 215px;
-  height: 50px;
+  width: 15em;
+  height: 60px;
   border-radius: 30px;
   margin-top: 37px;
   border: none;
-  font-size: 17px;
+  font-size: 19px;
+  font-weight: 500;
   color: white;
 }
 
+/* fonctionnement section */
 .fonctionnement {
   margin-bottom: 4rem;
   width: 90%;
@@ -88,6 +90,10 @@ body {
           box-shadow: 1px 2px 15px lightgray;
 }
 
+.fonctionnement__card:hover {
+  background-color: #f5edff;
+}
+
 .fonctionnement__card__num {
   background-color: #9356dc;
   color: white;
@@ -113,16 +119,8 @@ body {
   font-size: 1.2rem;
 }
 
-.fonctionnement__card:hover {
-  background-color: #f5edff;
-}
-
 .fonctionnement__card:hover > .fonctionnement__card__icone {
   color: #9356dc;
-}
-
-.fonctionnement__card:active {
-  background-color: #f2eafb;
 }
 
 /* restaurnts section */
