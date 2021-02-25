@@ -47,7 +47,7 @@
 
 .submenu {
     max-width: 100%;
-    overflow: hidden;
+    // overflow: hidden;
     padding: 1rem;
     &__title {
         text-transform: uppercase;
@@ -87,7 +87,7 @@
         align-items: center;
     }
     &__title {
-        margin: 1em 0 0 0;
+        margin: .5em 0 0 0;
     }
     &__description {
         margin-top: .5em;

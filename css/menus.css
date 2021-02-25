@@ -138,7 +138,6 @@ body {
 
 .submenu {
   max-width: 100%;
-  overflow: hidden;
   padding: 1rem;
 }
 
@@ -187,7 +186,7 @@ body {
 }
 
 .menuItem__title {
-  margin: 1em 0 0 0;
+  margin: .5em 0 0 0;
 }
 
 .menuItem__description {
