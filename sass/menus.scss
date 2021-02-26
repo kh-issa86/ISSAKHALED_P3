@@ -47,7 +47,7 @@
 
 .submenu {
     max-width: 100%;
-    // overflow: hidden;
+    overflow: hidden;
     padding: 1rem;
     &__title {
         text-transform: uppercase;
@@ -98,17 +98,41 @@
         justify-content: flex-end;
         align-items: flex-end;
         padding-left: .5rem;
+        
+        
+        
     }
     &__confirmation {
         background-color: #99e2d0;
-        margin: -1rem -5rem -1rem 1rem;
-        width: 4rem;
+        margin: -1rem -6rem -1rem 1rem;
+        width: 5rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        transition-duration: .5s;
+        
+    }
+    &__icon {
+        color: #99e2d0;
+        display: flex;
+        background-color: white;
+        border-radius: 50%;
+        height: 1.9em;
+        width: 1.9em;
+        align-items: center;
+        justify-content: center;
     }
 }
+.menuItem:hover > .menuItem__confirmation {
+    
+    transform: translateX(-5rem);
+    transition: transform 1.5s;
+}
+.menuItem:hover > .menuItem__price {
+    
+    transform: translateX(-5rem);
+    transition: transform 1.5s;
+}
+
 .wrapBtn {
     display: flex;
     text-decoration: none;
