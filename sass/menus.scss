@@ -1,6 +1,7 @@
 @import "/Users/khaledissa/Documents/GitHub/ISSAKHALED_3_11022021/sass/layouts/footer.scss";
 @import "/Users/khaledissa/Documents/GitHub/ISSAKHALED_3_11022021/sass/layouts/basic.scss";
 @import "/Users/khaledissa/Documents/GitHub/ISSAKHALED_3_11022021/sass/layouts/header.scss";
+@import "/Users/khaledissa/Documents/GitHub/ISSAKHALED_3_11022021/sass/layouts/Responsive.scss";
 
 .topimg {
   max-width: 100%;
@@ -90,7 +91,11 @@
         margin: .5em 0 0 0;
     }
     &__description {
+        width: auto;
         margin-top: .5em;
+        text-overflow: ellipsis;
+        overflow: hidden;
+         
     }
     &__price {
         font-weight: 700;
@@ -98,8 +103,6 @@
         justify-content: flex-end;
         align-items: flex-end;
         padding-left: .5rem;
-        
-        
         
     }
     &__confirmation {
@@ -120,18 +123,29 @@
         width: 1.9em;
         align-items: center;
         justify-content: center;
+        
     }
+}
+.menuItem:hover > .menuItem__icon{
+
+    transform: rotate(160deg);
+    transition-duration: 4.5s;
 }
 .menuItem:hover > .menuItem__confirmation {
     
     transform: translateX(-5rem);
     transition: transform 1.5s;
+    
 }
 .menuItem:hover > .menuItem__price {
     
     transform: translateX(-5rem);
     transition: transform 1.5s;
 }
+
+
+
+
 
 .wrapBtn {
     display: flex;

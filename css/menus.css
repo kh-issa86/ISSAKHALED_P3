@@ -81,6 +81,15 @@ body {
   color: #000;
 }
 
+@media only screen and (min-width: 900px) {
+  .submenus {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .topimg {
   max-width: 100%;
   max-height: 32rem;
@@ -191,7 +200,10 @@ body {
 }
 
 .menuItem__description {
+  width: auto;
   margin-top: .5em;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .menuItem__price {
@@ -238,6 +250,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.menuItem:hover > .menuItem__icon {
+  -webkit-transform: rotate(160deg);
+          transform: rotate(160deg);
+  -webkit-transition-duration: 4.5s;
+          transition-duration: 4.5s;
 }
 
 .menuItem:hover > .menuItem__confirmation {
