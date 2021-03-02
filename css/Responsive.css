@@ -5,5 +5,25 @@
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .restaurants {
+    background-color: #eeeeee;
+    padding-top: 2.5rem;
+    height: auto;
+    padding-bottom: 3rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 10em 1fr 1fr;
+        grid-template-rows: 10em 1fr 1fr;
+  }
+  .restaurants__titre {
+    padding: 0 0 1rem 1rem;
+    font-size: 25px;
+    font-weight: 600;
+    -ms-grid-column: 1;
+        grid-column: 1;
+    grid-column-end: 3;
+  }
 }
 /*# sourceMappingURL=Responsive.css.map */

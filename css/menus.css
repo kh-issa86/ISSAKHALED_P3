@@ -11,7 +11,7 @@
   font-size: 30px;
   font-weight: 100;
   margin-bottom: 1.5rem;
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
 }
 
 .footer__ul {
@@ -154,14 +154,14 @@ body {
 .submenu__title {
   text-transform: uppercase;
   position: relative;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   font-weight: 400;
 }
 
 .submenu__title::after {
   content: "";
   width: 3rem;
-  height: .25rem;
+  height: 0.25rem;
   background-color: #99e2d0;
   position: absolute;
   left: 0;
@@ -174,7 +174,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   margin: 1rem 0;
   -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
@@ -196,12 +196,12 @@ body {
 }
 
 .menuItem__title {
-  margin: .5em 0 0 0;
+  margin: 0.5em 0 0 0;
 }
 
 .menuItem__description {
   width: auto;
-  margin-top: .5em;
+  margin-top: 0.5em;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -217,7 +217,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
 }
 
 .menuItem__confirmation {
@@ -252,29 +252,29 @@ body {
           justify-content: center;
 }
 
-.menuItem:hover > .menuItem__icon {
-  -webkit-transform: rotate(160deg);
-          transform: rotate(160deg);
-  -webkit-transition-duration: 4.5s;
-          transition-duration: 4.5s;
+.menuItem:hover .menuItem__icon {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-duration: .7s;
+          transition-duration: .7s;
 }
 
 .menuItem:hover > .menuItem__confirmation {
   -webkit-transform: translateX(-5rem);
           transform: translateX(-5rem);
-  -webkit-transition: -webkit-transform 1.5s;
-  transition: -webkit-transform 1.5s;
-  transition: transform 1.5s;
-  transition: transform 1.5s, -webkit-transform 1.5s;
+  -webkit-transition: -webkit-transform .7s;
+  transition: -webkit-transform .7s;
+  transition: transform .7s;
+  transition: transform .7s, -webkit-transform .7s;
 }
 
 .menuItem:hover > .menuItem__price {
   -webkit-transform: translateX(-5rem);
           transform: translateX(-5rem);
-  -webkit-transition: -webkit-transform 1.5s;
-  transition: -webkit-transform 1.5s;
-  transition: transform 1.5s;
-  transition: transform 1.5s, -webkit-transform 1.5s;
+  -webkit-transition: -webkit-transform .7s;
+  transition: -webkit-transform .7s;
+  transition: transform .7s;
+  transition: transform .7s, -webkit-transform .7s;
 }
 
 .wrapBtn {
@@ -298,15 +298,15 @@ body {
   background-color: #686868;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)), to(rgba(255, 121, 218, 0.9)));
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  -webkit-transition-duration: .25s;
-          transition-duration: .25s;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
   cursor: pointer;
 }
 
 .commandBtn:hover {
   -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-  -webkit-transition-duration: .25s;
-          transition-duration: .25s;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
 }
 /*# sourceMappingURL=menus.css.map */

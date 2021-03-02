@@ -1,20 +1,13 @@
-
-
 @import "/Users/khaledissa/Documents/GitHub/ISSAKHALED_3_11022021/sass/layouts/footer.scss";
 @import "/Users/khaledissa/Documents/GitHub/ISSAKHALED_3_11022021/sass/layouts/basic.scss";
 @import "/Users/khaledissa/Documents/GitHub/ISSAKHALED_3_11022021/sass/layouts/Responsive.scss";
 
-
-
-
-
 .logo {
-  text-align:center;
+  text-align: center;
   height: 65px;
   position: relative;
   bottom: -15px;
   padding: 0.5rem;
-  ;
 }
 
 .localisation {
@@ -27,7 +20,6 @@
     font-size: 20px;
   }
 }
-
 
 .discover {
   text-align: center;
@@ -52,7 +44,6 @@
     color: white;
   }
 }
-
 
 /* fonctionnement section */
 
@@ -96,14 +87,11 @@
       font-size: 1.2rem;
     }
   }
-
 }
-
 
 .fonctionnement__card:hover > .fonctionnement__card__icone {
   color: #9356dc;
 }
-
 
 /* restaurnts section */
 
@@ -120,9 +108,9 @@
     font-weight: bold;
   }
   &__titre {
-      padding: 0 0 1rem 1rem;
-      font-size: 25px;
-      font-weight: 600;
+    padding: 0 0 1rem 1rem;
+    font-size: 25px;
+    font-weight: 600;
   }
   &__card {
     width: 92%;
@@ -192,5 +180,27 @@
       border-radius: 0.2rem;
       color: #278870;
     }
+  }
+}
+@media only screen and (min-width: 900px) {
+  .restaurants {
+    background-color: #eeeeee;
+    padding-top: 2.5rem;
+    height: auto;
+    padding-bottom: 3rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 10em 1fr 1fr;
+    grid-template-rows: 5em 1fr 1fr;
+  }
+  .restaurants__titre {
+    padding: 0 0 1rem 1rem;
+    font-size: 25px;
+    font-weight: 600;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-left: 3.8em;
   }
 }

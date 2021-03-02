@@ -1,15 +1,26 @@
-
-
-
-
-
 @media only screen and (min-width: 900px) {
-   
-   
-    .submenus {
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 1fr 1fr 1fr;
-          grid-template-columns: 1fr 1fr 1fr;
+  
+
+  .submenus {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .restaurants {
+    background-color: #eeeeee;
+    padding-top: 2.5rem;
+    height: auto;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10em 1fr 1fr;
+    &__titre {
+      padding: 0 0 1rem 1rem;
+      font-size: 25px;
+      font-weight: 600;
+      grid-column-start: 1;
+      grid-column-end: 3;
     }
+  }
 }
