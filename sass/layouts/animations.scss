@@ -1,0 +1,63 @@
+
+
+.menuItem:hover .menuItem__icon {
+    transform: rotate(360deg);
+    transition-duration: .7s;
+  }
+  .menuItem:hover > .menuItem__confirmation {
+    transform: translateX(-5rem);
+    transition: transform .7s;
+  }
+  .menuItem:hover > .menuItem__price {
+    transform: translateX(-5rem);
+    transition: transform .7s;
+  }
+
+// @for $i from 0 to 10 {
+//   .transition-#{$i} {
+//     animation: jump .1s * $i linear;
+//   }
+  
+// }
+@for $i from 0 to 10 {
+  .transition-#{$i} {
+    animation: transitionIn .10s * $i linear;
+  }
+  
+}
+  
+  @keyframes transitionIn {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  // @for $i from 0 to 10 {
+  //   .transition-#{$i} {
+  //     animation: bounce .10s * $i linear;
+  //   }
+    
+  // }
+
+// @keyframes bounce {
+//   0% {
+//     transform: translateX(0);
+
+//   }
+//   25% {
+//     transform: translateX(.5em);
+
+
+//   }
+//   75% {
+//     transform: translateX(1em);
+
+
+//   }
+//   100% {
+//     transform: translateX(0);
+
+//   }
+// }

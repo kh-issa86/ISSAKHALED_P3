@@ -2,6 +2,7 @@
 @import "/Users/khaledissa/Documents/GitHub/ISSAKHALED_3_11022021/sass/layouts/basic.scss";
 @import "/Users/khaledissa/Documents/GitHub/ISSAKHALED_3_11022021/sass/layouts/header.scss";
 @import "/Users/khaledissa/Documents/GitHub/ISSAKHALED_3_11022021/sass/layouts/Responsive.scss";
+@import "/Users/khaledissa/Documents/GitHub/ISSAKHALED_3_11022021/sass/layouts/animations.scss";
 
 .topimg {
   max-width: 100%;
@@ -113,18 +114,7 @@
     justify-content: center;
   }
 }
-.menuItem:hover .menuItem__icon {
-  transform: rotate(360deg);
-  transition-duration: .7s;
-}
-.menuItem:hover > .menuItem__confirmation {
-  transform: translateX(-5rem);
-  transition: transform .7s;
-}
-.menuItem:hover > .menuItem__price {
-  transform: translateX(-5rem);
-  transition: transform .7s;
-}
+
 
 .wrapBtn {
   display: flex;

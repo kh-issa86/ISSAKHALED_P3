@@ -1,0 +1,97 @@
+.menuItem:hover .menuItem__icon {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-duration: .7s;
+          transition-duration: .7s;
+}
+
+.menuItem:hover > .menuItem__confirmation {
+  -webkit-transform: translateX(-5rem);
+          transform: translateX(-5rem);
+  -webkit-transition: -webkit-transform .7s;
+  transition: -webkit-transform .7s;
+  transition: transform .7s;
+  transition: transform .7s, -webkit-transform .7s;
+}
+
+.menuItem:hover > .menuItem__price {
+  -webkit-transform: translateX(-5rem);
+          transform: translateX(-5rem);
+  -webkit-transition: -webkit-transform .7s;
+  transition: -webkit-transform .7s;
+  transition: transform .7s;
+  transition: transform .7s, -webkit-transform .7s;
+}
+
+.transition-0 {
+  -webkit-animation: transitionIn 0s linear;
+          animation: transitionIn 0s linear;
+}
+
+.transition-1 {
+  -webkit-animation: transitionIn 0.1s linear;
+          animation: transitionIn 0.1s linear;
+}
+
+.transition-2 {
+  -webkit-animation: transitionIn 0.2s linear;
+          animation: transitionIn 0.2s linear;
+}
+
+.transition-3 {
+  -webkit-animation: transitionIn 0.3s linear;
+          animation: transitionIn 0.3s linear;
+}
+
+.transition-4 {
+  -webkit-animation: transitionIn 0.4s linear;
+          animation: transitionIn 0.4s linear;
+}
+
+.transition-5 {
+  -webkit-animation: transitionIn 0.5s linear;
+          animation: transitionIn 0.5s linear;
+}
+
+.transition-6 {
+  -webkit-animation: transitionIn 0.6s linear;
+          animation: transitionIn 0.6s linear;
+}
+
+.transition-7 {
+  -webkit-animation: transitionIn 0.7s linear;
+          animation: transitionIn 0.7s linear;
+}
+
+.transition-8 {
+  -webkit-animation: transitionIn 0.8s linear;
+          animation: transitionIn 0.8s linear;
+}
+
+.transition-9 {
+  -webkit-animation: transitionIn 0.9s linear;
+          animation: transitionIn 0.9s linear;
+}
+
+@-webkit-keyframes transitionIn {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes transitionIn {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=animations.css.map */
