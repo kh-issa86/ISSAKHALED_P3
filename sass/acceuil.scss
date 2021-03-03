@@ -33,7 +33,9 @@
     font-size: 19px;
   }
   &__button {
-    background-image: linear-gradient(#ff79da, #9356dc);
+    background-color: #686868;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  transition-duration: 0.25s;
     width: 15em;
     height: 60px;
     border-radius: 30px;
@@ -42,8 +44,16 @@
     font-size: 19px;
     font-weight: 500;
     color: white;
+      &:hover {
+        background-color: #ae80e5;
+        background-blend-mode: lighten;
+        box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
+        transition-duration: 0.25s;
+
+      }
+    }
   }
-}
+
 
 /* fonctionnement section */
 

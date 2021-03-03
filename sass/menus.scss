@@ -130,16 +130,14 @@
   border-radius: 100px;
   color: #fff;
   background-color: #686868;
-  background-image: linear-gradient(
-    0deg,
-    rgba(147, 86, 220, 0.9),
-    rgba(255, 121, 218, 0.9)
-  );
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   transition-duration: 0.25s;
 
   cursor: pointer;
   &:hover {
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+    background-color: #ae80e5;
+    background-blend-mode: lighten;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
     transition-duration: 0.25s;
   }
 }
