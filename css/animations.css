@@ -94,4 +94,109 @@
             transform: scale(1);
   }
 }
+
+/* Loader */
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: white;
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: fadeout 0s 3s forwards;
+          animation: fadeout 0s 3s forwards;
+}
+
+.spinner {
+  -webkit-animation: rotate 6s linear infinite;
+          animation: rotate 6s linear infinite;
+  -webkit-transform-origin: bottom top;
+          transform-origin: bottom top;
+}
+
+.circle {
+  -webkit-animation: grow 1.5s linear infinite;
+          animation: grow 1.5s linear infinite;
+  background-color: #FF79DA;
+  border-radius: 50%;
+  margin: 10px;
+  height: 55px;
+  width: 55px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.circle:nth-of-type(2) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  background-color: #9356DC;
+  margin: 10px;
+}
+
+.circle:nth-of-type(3) {
+  -webkit-animation-delay: .50s;
+          animation-delay: .50s;
+  background-color: #99E2D0;
+  margin: 10px;
+}
+
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes grow {
+  50% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+}
+
+@keyframes grow {
+  50% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+}
+
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+}
 /*# sourceMappingURL=animations.css.map */

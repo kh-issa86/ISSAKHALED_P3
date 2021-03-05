@@ -2,6 +2,7 @@
 @import "/Users/khaledissa/Documents/GitHub/ISSAKHALED_3_11022021/sass/layouts/basic.scss";
 @import "/Users/khaledissa/Documents/GitHub/ISSAKHALED_3_11022021/sass/layouts/Responsive.scss";
 @import "/Users/khaledissa/Documents/GitHub/ISSAKHALED_3_11022021/sass/variables.scss";
+@import "/Users/khaledissa/Documents/GitHub/ISSAKHALED_3_11022021/sass/layouts/animations.scss";
 
 .logo {
   text-align: center;
@@ -35,8 +36,8 @@
   }
   &__button {
     background-color: #686868;
-  background-image: $linear-gradient;
-  transition-duration: 0.25s;
+    background-image: $gradient;
+    transition-duration: 0.25s;
     width: 15em;
     height: 60px;
     border-radius: 30px;
@@ -81,7 +82,7 @@
       background-color: #f5edff;
     }
     &__num {
-      background-color: #9356dc;
+      background-color:$color-primary;
       color: white;
       width: 1.5em;
       height: 1.7rem;
@@ -119,7 +120,7 @@
     font-weight: bold;
   }
   &__titre {
-    padding: 0 0 1rem 1rem;
+    padding: 0 0 1rem 5rem;
     font-size: 25px;
     font-weight: 600;
   }
@@ -179,110 +180,13 @@
       background-color: $color-tertiary;
       width: 5.5rem;
       height: 1.8rem;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
       justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
       border-radius: 0.2rem;
       color: #278870;
     }
   }
 }
-@media only screen and (min-width: 900px) {
-  .restaurants {
-    background-color: #eeeeee;
-    padding-top: 2.5rem;
-    height: auto;
-    padding-bottom: 3rem;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 10em 1fr 1fr;
-    grid-template-rows: 5em 1fr 1fr;
-  }
-  .restaurants__titre {
-    padding: 0 0 1rem 1rem;
-    font-size: 25px;
-    font-weight: 600;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    padding-left: 3.8em;
-  }
-}
-
-.loader {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  background-color: rgb(255, 255, 255);
-  z-index: 10000;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  animation: fadeout 0s 3s forwards;
-  
-
-}
-.spinner {
-  animation: rotate 6s linear infinite;
-  transform-origin: bottom top;
-
-}
 
 
-.circle {
-  animation: grow 1.5s linear infinite;
-	background-color: $color-secondary;
-	border-radius: 50%;
-	margin: 10px;
-	height: 55px;
-	width: 55px;
-  transform: scale(0);
-
-}
-
-.circle:nth-of-type(2) {
-	animation-delay: 1s;
-  background-color:$color-primary;
-  margin: 10px;
-
-}
-
-.circle:nth-of-type(3) {
-	animation-delay: .50s;
-  background-color:  $color-tertiary;
-	margin: 10px;
-
-}
-
-
-
-@keyframes rotate {
-	to { 
-    transform: rotate(360deg);
-  }
-}
-@keyframes grow {
-	50% {
-		transform: scale(.75);
-	}
-}
-@keyframes fadeout {
-  0% {
-      opacity: 1;
-  }
-  
-  100% {
-      opacity: 0;
-      display: none;
-      z-index: -1;
-  }
-}

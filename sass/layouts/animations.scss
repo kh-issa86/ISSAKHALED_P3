@@ -1,4 +1,6 @@
 
+@import "/Users/khaledissa/Documents/GitHub/ISSAKHALED_3_11022021/sass/variables.scss";
+
 
 .menuItem:hover .menuItem__icon {
     transform: rotate(360deg);
@@ -61,3 +63,76 @@
 
 //   }
 // }
+
+/* Loader */
+
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 10000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  animation: fadeout 0s 3s forwards;
+  
+
+}
+.spinner {
+  animation: rotate 6s linear infinite;
+  transform-origin: bottom top;
+
+}
+
+
+.circle {
+  animation: grow 1.5s linear infinite;
+	background-color: $color-secondary;
+	border-radius: 50%;
+	margin: 10px;
+	height: 55px;
+	width: 55px;
+  transform: scale(0);
+
+}
+
+.circle:nth-of-type(2) {
+	animation-delay: 1s;
+  background-color:$color-primary;
+  margin: 10px;
+
+}
+
+.circle:nth-of-type(3) {
+	animation-delay: .50s;
+  background-color:  $color-tertiary;
+	margin: 10px;
+
+}
+
+
+
+@keyframes rotate {
+	to { 
+    transform: rotate(360deg);
+  }
+}
+@keyframes grow {
+	50% {
+		transform: scale(.75);
+	}
+}
+@keyframes fadeout {
+  0% {
+      opacity: 1;
+  }
+  
+  100% {
+      opacity: 0;
+      display: none;
+      z-index: -1;
+  }
+}

@@ -1,5 +1,8 @@
+@import "/Users/khaledissa/Documents/GitHub/ISSAKHALED_3_11022021/sass/variables.scss";
+
+
 .footer {
-  background-color: #323232;
+  background-color: $footer-background;
   color: white;
   width: 100%;
   padding-top: 1rem;
@@ -17,15 +20,19 @@
     margin: 0.5rem 0 0.5rem 0;
     font-size: 17px;
     &__li {
-      margin-top: 1rem;
+      margin-top: .7rem;
       a {
         color: white;
         text-decoration: none;
+      
       }
       &__icone {
         margin-right: 1rem;
       }
     }
   }
+}
+.fa-utensils {
+  margin-right: 1.5em;
 }
 

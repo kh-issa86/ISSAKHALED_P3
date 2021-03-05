@@ -1,5 +1,5 @@
 .footer {
-  background-color: #323232;
+  background-color: #353535;
   color: white;
   width: 100%;
   padding-top: 1rem;
@@ -22,7 +22,7 @@
 }
 
 .footer__ul__li {
-  margin-top: 1rem;
+  margin-top: .7rem;
 }
 
 .footer__ul__li a {
@@ -32,5 +32,9 @@
 
 .footer__ul__li__icone {
   margin-right: 1rem;
+}
+
+.fa-utensils {
+  margin-right: 1.5em;
 }
 /*# sourceMappingURL=footer.css.map */
