@@ -109,8 +109,8 @@ body {
 
 .discover__button {
   background-color: #686868;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)), to(rgba(255, 121, 218, 0.9)));
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-image: -webkit-gradient(linear, right top, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
   width: 15em;
@@ -275,14 +275,14 @@ body {
 
 .restaurants__card__description__coeur:hover {
   font-weight: bold;
-  color: #9356dc;
+  color: #9356DC;
 }
 
 .restaurants__card__nouveau {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   width: 5.5rem;
   height: 1.8rem;
   display: -webkit-box;
@@ -319,6 +319,110 @@ body {
         grid-column-start: 1;
     grid-column-end: 3;
     padding-left: 3.8em;
+  }
+}
+
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: white;
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: fadeout 0s 3s forwards;
+          animation: fadeout 0s 3s forwards;
+}
+
+.spinner {
+  -webkit-animation: rotate 6s linear infinite;
+          animation: rotate 6s linear infinite;
+  -webkit-transform-origin: bottom top;
+          transform-origin: bottom top;
+}
+
+.circle {
+  -webkit-animation: grow 1.5s linear infinite;
+          animation: grow 1.5s linear infinite;
+  background-color: #FF79DA;
+  border-radius: 50%;
+  margin: 10px;
+  height: 55px;
+  width: 55px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.circle:nth-of-type(2) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  background-color: #9356DC;
+  margin: 10px;
+}
+
+.circle:nth-of-type(3) {
+  -webkit-animation-delay: .50s;
+          animation-delay: .50s;
+  background-color: #99E2D0;
+  margin: 10px;
+}
+
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes grow {
+  50% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+}
+
+@keyframes grow {
+  50% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+}
+
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
   }
 }
 /*# sourceMappingURL=acceuil.css.map */

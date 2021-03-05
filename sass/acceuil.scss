@@ -1,6 +1,7 @@
 @import "/Users/khaledissa/Documents/GitHub/ISSAKHALED_3_11022021/sass/layouts/footer.scss";
 @import "/Users/khaledissa/Documents/GitHub/ISSAKHALED_3_11022021/sass/layouts/basic.scss";
 @import "/Users/khaledissa/Documents/GitHub/ISSAKHALED_3_11022021/sass/layouts/Responsive.scss";
+@import "/Users/khaledissa/Documents/GitHub/ISSAKHALED_3_11022021/sass/variables.scss";
 
 .logo {
   text-align: center;
@@ -34,7 +35,7 @@
   }
   &__button {
     background-color: #686868;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-image: $linear-gradient;
   transition-duration: 0.25s;
     width: 15em;
     height: 60px;
@@ -166,7 +167,7 @@
         padding-right: 2rem;
         &:hover {
           font-weight: bold;
-          color: #9356dc;
+          color: $color-primary;
         }
       }
     }
@@ -175,7 +176,7 @@
       position: absolute;
       top: 1rem;
       right: 1rem;
-      background-color: #99e2d0;
+      background-color: $color-tertiary;
       width: 5.5rem;
       height: 1.8rem;
       display: -webkit-box;
@@ -212,5 +213,76 @@
     grid-column-start: 1;
     grid-column-end: 3;
     padding-left: 3.8em;
+  }
+}
+
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 10000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  animation: fadeout 0s 3s forwards;
+  
+
+}
+.spinner {
+  animation: rotate 6s linear infinite;
+  transform-origin: bottom top;
+
+}
+
+
+.circle {
+  animation: grow 1.5s linear infinite;
+	background-color: $color-secondary;
+	border-radius: 50%;
+	margin: 10px;
+	height: 55px;
+	width: 55px;
+  transform: scale(0);
+
+}
+
+.circle:nth-of-type(2) {
+	animation-delay: 1s;
+  background-color:$color-primary;
+  margin: 10px;
+
+}
+
+.circle:nth-of-type(3) {
+	animation-delay: .50s;
+  background-color:  $color-tertiary;
+	margin: 10px;
+
+}
+
+
+
+@keyframes rotate {
+	to { 
+    transform: rotate(360deg);
+  }
+}
+@keyframes grow {
+	50% {
+		transform: scale(.75);
+	}
+}
+@keyframes fadeout {
+  0% {
+      opacity: 1;
+  }
+  
+  100% {
+      opacity: 0;
+      display: none;
+      z-index: -1;
   }
 }
