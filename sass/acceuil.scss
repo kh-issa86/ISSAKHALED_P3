@@ -46,16 +46,14 @@
     font-size: 19px;
     font-weight: 500;
     color: white;
-      &:hover {
-        background-color: #ae80e5;
-        background-blend-mode: lighten;
-        box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
-        transition-duration: 0.25s;
-
-      }
+    &:hover {
+      background-color: #ae80e5;
+      background-blend-mode: lighten;
+      box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+      transition-duration: 0.25s;
     }
   }
-
+}
 
 /* fonctionnement section */
 
@@ -82,7 +80,7 @@
       background-color: #f5edff;
     }
     &__num {
-      background-color:$color-primary;
+      background-color: $color-primary;
       color: white;
       width: 1.5em;
       height: 1.7rem;
@@ -188,5 +186,3 @@
     }
   }
 }
-
-

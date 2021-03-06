@@ -1,26 +1,30 @@
 .menuItem:hover .menuItem__icon {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-  -webkit-transition-duration: .7s;
-          transition-duration: .7s;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
 }
 
 .menuItem:hover > .menuItem__confirmation {
-  -webkit-transform: translateX(-5rem);
-          transform: translateX(-5rem);
-  -webkit-transition: -webkit-transform .7s;
-  transition: -webkit-transform .7s;
-  transition: transform .7s;
-  transition: transform .7s, -webkit-transform .7s;
+  -webkit-transform: translateX(0rem);
+          transform: translateX(0rem);
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
 }
 
 .menuItem:hover > .menuItem__price {
-  -webkit-transform: translateX(-5rem);
-          transform: translateX(-5rem);
-  -webkit-transition: -webkit-transform .7s;
-  transition: -webkit-transform .7s;
-  transition: transform .7s;
-  transition: transform .7s, -webkit-transform .7s;
+  -webkit-transform: translateX(0rem);
+          transform: translateX(0rem);
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+}
+
+.menuItem:hover > .menuItem__header {
+  width: 70%;
 }
 
 .transition-0 {
@@ -144,8 +148,8 @@
 }
 
 .circle:nth-of-type(3) {
-  -webkit-animation-delay: .50s;
-          animation-delay: .50s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
   background-color: #99E2D0;
   margin: 10px;
 }

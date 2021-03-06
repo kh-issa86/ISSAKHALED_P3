@@ -11,6 +11,8 @@
   object-fit: cover;
 }
 
+/* Menu container */
+
 .menu {
   margin-top: -4rem;
   border-radius: 2rem 2rem 0 0;
@@ -79,14 +81,20 @@
   height: 3.5em;
 
   &__header {
-    flex: 1;
     align-items: center;
+    width: 100%;
   }
   &__title {
     margin: 0.5em 0 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   &__description {
     margin-top: 0.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   &__price {
     font-weight: 700;
@@ -115,7 +123,6 @@
   }
 }
 
-
 .wrapBtn {
   display: flex;
   text-decoration: none;
@@ -136,7 +143,7 @@
   &:hover {
     background-color: #ae80e5;
     background-blend-mode: lighten;
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
     transition-duration: 0.25s;
   }
 }

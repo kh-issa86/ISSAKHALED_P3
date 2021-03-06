@@ -85,8 +85,8 @@ body {
 }
 
 .menuItem:hover > .menuItem__confirmation {
-  -webkit-transform: translateX(-5rem);
-          transform: translateX(-5rem);
+  -webkit-transform: translateX(0rem);
+          transform: translateX(0rem);
   -webkit-transition: -webkit-transform .7s;
   transition: -webkit-transform .7s;
   transition: transform .7s;
@@ -94,12 +94,16 @@ body {
 }
 
 .menuItem:hover > .menuItem__price {
-  -webkit-transform: translateX(-5rem);
-          transform: translateX(-5rem);
+  -webkit-transform: translateX(0rem);
+          transform: translateX(0rem);
   -webkit-transition: -webkit-transform .7s;
   transition: -webkit-transform .7s;
   transition: transform .7s;
   transition: transform .7s, -webkit-transform .7s;
+}
+
+.menuItem:hover > .menuItem__header {
+  width: 70%;
 }
 
 .transition-0 {
