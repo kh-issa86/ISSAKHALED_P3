@@ -84,7 +84,7 @@
 
   &__header {
     align-items: center;
-    width: 100%;
+    width: 90%;
     flex: 1;
   }
   &__title {
@@ -102,7 +102,6 @@
     white-space: nowrap;
     margin-top: 10px;
 
-    // font-size: 13px;
   }
   &__price {
     font-weight: 700;
