@@ -24,89 +24,194 @@
 }
 
 .transition-0 {
-  -webkit-animation: transitionIn 0s ease-in-out;
-          animation: transitionIn 0s ease-in-out;
+  -webkit-animation: transitiontopY .7s;
+          animation: transitiontopY .7s;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition-timing-function: cubic-bezier(1, 0, 0, 1);
+          transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .transition-1 {
-  -webkit-animation: transitionIn 0.2s ease-in-out;
-          animation: transitionIn 0.2s ease-in-out;
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  -webkit-animation: transitiontopY .7s;
+          animation: transitiontopY .7s;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition-timing-function: cubic-bezier(1, 0, 0, 1);
+          transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .transition-2 {
-  -webkit-animation: transitionIn 0.4s ease-in-out;
-          animation: transitionIn 0.4s ease-in-out;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-animation: transitiontopY .7s;
+          animation: transitiontopY .7s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition-timing-function: cubic-bezier(1, 0, 0, 1);
+          transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .transition-3 {
-  -webkit-animation: transitionIn 0.6s ease-in-out;
-          animation: transitionIn 0.6s ease-in-out;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  -webkit-animation: transitiontopY .7s;
+          animation: transitiontopY .7s;
+  -webkit-animation-delay: 0.45s;
+          animation-delay: 0.45s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition-timing-function: cubic-bezier(1, 0, 0, 1);
+          transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .transition-4 {
-  -webkit-animation: transitionIn 0.8s ease-in-out;
-          animation: transitionIn 0.8s ease-in-out;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  -webkit-animation: transitiontopY .7s;
+          animation: transitiontopY .7s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition-timing-function: cubic-bezier(1, 0, 0, 1);
+          transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .transition-5 {
-  -webkit-animation: transitionIn 1s ease-in-out;
-          animation: transitionIn 1s ease-in-out;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation: transitiontopY .7s;
+          animation: transitiontopY .7s;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition-timing-function: cubic-bezier(1, 0, 0, 1);
+          transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .transition-6 {
-  -webkit-animation: transitionIn 1.2s ease-in-out;
-          animation: transitionIn 1.2s ease-in-out;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  -webkit-animation: transitiontopY .7s;
+          animation: transitiontopY .7s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition-timing-function: cubic-bezier(1, 0, 0, 1);
+          transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .transition-7 {
-  -webkit-animation: transitionIn 1.4s ease-in-out;
-          animation: transitionIn 1.4s ease-in-out;
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  -webkit-animation: transitiontopY .7s;
+          animation: transitiontopY .7s;
+  -webkit-animation-delay: 1.05s;
+          animation-delay: 1.05s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition-timing-function: cubic-bezier(1, 0, 0, 1);
+          transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .transition-8 {
-  -webkit-animation: transitionIn 1.6s ease-in-out;
-          animation: transitionIn 1.6s ease-in-out;
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  -webkit-animation: transitiontopY .7s;
+          animation: transitiontopY .7s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition-timing-function: cubic-bezier(1, 0, 0, 1);
+          transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .transition-9 {
-  -webkit-animation: transitionIn 1.8s ease-in-out;
-          animation: transitionIn 1.8s ease-in-out;
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
+  -webkit-animation: transitiontopY .7s;
+          animation: transitiontopY .7s;
+  -webkit-animation-delay: 1.35s;
+          animation-delay: 1.35s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition-timing-function: cubic-bezier(1, 0, 0, 1);
+          transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 @-webkit-keyframes transitionIn {
-  from {
+  0% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
     opacity: 0;
   }
-  to {
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
     opacity: 1;
   }
 }
 
 @keyframes transitionIn {
-  from {
+  0% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
     opacity: 0;
   }
-  to {
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+
+.transitiontopY {
+  -webkit-animation: transitiontopY 0.9s;
+          animation: transitiontopY 0.9s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition-timing-function: cubic-bezier(1, 0, 0, 1);
+          transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes transitiontopY {
+  0% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+
+@keyframes transitiontopY {
+  0% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
     opacity: 1;
   }
 }

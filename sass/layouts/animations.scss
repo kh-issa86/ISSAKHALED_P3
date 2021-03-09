@@ -18,18 +18,43 @@
 
 @for $i from 0 to 10 {
   .transition-#{$i} {
-    animation: transitionIn 0.20s * $i ease-in-out;
-    animation-delay: .1s * $i;
+    animation: transitiontopY .7s;
+    animation-delay: 0.15s*$i;
+    transform-origin: bottom;
+    transition-timing-function: cubic-bezier(1,0,0,1);
+    animation-fill-mode: backwards;
+    }    
   }
-}
 
 @keyframes transitionIn {
-  from {
+  0% {
+    transform: translateY(1rem);
     opacity: 0;
   }
-  to {
+  100% {
+    transform: translateY(0rem);
     opacity: 1;
   }
+  }
+
+
+
+.transitiontopY {
+  animation: transitiontopY 0.9s;
+  transform-origin: bottom;
+  transition-timing-function: cubic-bezier(1,0,0,1);
+  animation-fill-mode: backwards;
+}
+
+@keyframes transitiontopY {
+0% {
+  transform: translateY(1rem);
+  opacity: 0;
+}
+100% {
+  transform: translateY(0rem);
+  opacity: 1;
+}
 }
 
 /* Loader */

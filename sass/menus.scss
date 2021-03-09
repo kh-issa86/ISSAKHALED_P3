@@ -94,13 +94,13 @@
     margin-top: 5px;
     margin-bottom: 0;
 
-    // font-size: 15px;
   }
   &__description {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     margin-top: 10px;
+    color: gray;
 
   }
   &__price {
