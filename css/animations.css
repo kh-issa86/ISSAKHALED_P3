@@ -241,8 +241,8 @@
 .spinner {
   -webkit-animation: rotate 6s linear infinite;
           animation: rotate 6s linear infinite;
-  -webkit-transform-origin: bottom top;
-          transform-origin: bottom top;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 .circle {
