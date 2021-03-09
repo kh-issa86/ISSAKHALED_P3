@@ -22,7 +22,7 @@
 }
 
 .footer__ul__li {
-  margin-top: 0.7rem;
+  margin-top: .7rem;
 }
 
 .footer__ul__li a {
@@ -74,24 +74,61 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   font-size: 1.5rem;
   color: #000;
 }
 
-@media only screen and (min-width: 900px) {
-  .submenus {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+/* Medium devices (tabletts, 500px and down) */
+@media only screen and (min-width: 768px) and (max-width: 1205px) {
+  .submenu__title {
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 0.5rem;
+    font-weight: 400;
+    margin: 0em 7em;
   }
+  .menuItem {
+    background-color: #ffffff;
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 0.75rem;
+    margin: 1rem auto;
+    -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+            box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    height: 3.5em;
+    width: 60%;
+  }
+  .menuItem__header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .menuItem__title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .menuItem__description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+/* Large devices (desktops, between 768px and 1440px) */
+@media only screen and (min-width: 1206px) and (max-width: 1640px) {
   .restaurants {
     background-color: #eeeeee;
     padding-top: 2.5rem;
@@ -100,9 +137,9 @@ body {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 5em 1fr 1fr;
-    grid-template-rows: 5em 1fr 1fr;
+        grid-template-rows: 5em 1fr 1fr;
   }
   .restaurants__titre {
     padding: 0 0 1rem 5rem;
@@ -112,31 +149,63 @@ body {
     grid-column: 1;
     grid-column-end: 3;
   }
+  .submenus {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .menuItem {
+    background-color: #fff;
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 0.75rem;
+    margin: 1rem auto;
+    -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+            box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    height: 3.5em;
+  }
+  .menuItem__header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .menuItem__title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .menuItem__description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 
 .menuItem:hover .menuItem__icon {
   -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
+          transform: rotate(360deg);
+  -webkit-transition-duration: .9s;
+          transition-duration: .9s;
 }
 
 .menuItem:hover > .menuItem__confirmation {
-  -webkit-transform: translateX(0rem);
-  transform: translateX(0rem);
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: -webkit-transform 0.7s;
-  transition: transform 0.7s;
-  transition: transform 0.7s, -webkit-transform 0.7s;
+  -webkit-transform: translateX(-5rem);
+          transform: translateX(-5rem);
+  -webkit-transition: .7s ease-in-out;
+  transition: .7s ease-in-out;
 }
 
 .menuItem:hover > .menuItem__price {
-  -webkit-transform: translateX(0rem);
-  transform: translateX(0rem);
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: -webkit-transform 0.7s;
-  transition: transform 0.7s;
-  transition: transform 0.7s, -webkit-transform 0.7s;
+  -webkit-transform: translateX(-5rem);
+          transform: translateX(-5rem);
+  -webkit-transition-duration: .7s;
+          transition-duration: .7s;
 }
 
 .menuItem:hover > .menuItem__header {
@@ -144,74 +213,90 @@ body {
 }
 
 .transition-0 {
-  -webkit-animation: transitionIn 0s linear;
-  animation: transitionIn 0s linear;
+  -webkit-animation: transitionIn 0s ease-in-out;
+          animation: transitionIn 0s ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .transition-1 {
-  -webkit-animation: transitionIn 0.1s linear;
-  animation: transitionIn 0.1s linear;
+  -webkit-animation: transitionIn 0.1s ease-in-out;
+          animation: transitionIn 0.1s ease-in-out;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
 .transition-2 {
-  -webkit-animation: transitionIn 0.2s linear;
-  animation: transitionIn 0.2s linear;
+  -webkit-animation: transitionIn 0.2s ease-in-out;
+          animation: transitionIn 0.2s ease-in-out;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 .transition-3 {
-  -webkit-animation: transitionIn 0.3s linear;
-  animation: transitionIn 0.3s linear;
+  -webkit-animation: transitionIn 0.3s ease-in-out;
+          animation: transitionIn 0.3s ease-in-out;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 .transition-4 {
-  -webkit-animation: transitionIn 0.4s linear;
-  animation: transitionIn 0.4s linear;
+  -webkit-animation: transitionIn 0.4s ease-in-out;
+          animation: transitionIn 0.4s ease-in-out;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 .transition-5 {
-  -webkit-animation: transitionIn 0.5s linear;
-  animation: transitionIn 0.5s linear;
+  -webkit-animation: transitionIn 0.5s ease-in-out;
+          animation: transitionIn 0.5s ease-in-out;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .transition-6 {
-  -webkit-animation: transitionIn 0.6s linear;
-  animation: transitionIn 0.6s linear;
+  -webkit-animation: transitionIn 0.6s ease-in-out;
+          animation: transitionIn 0.6s ease-in-out;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 .transition-7 {
-  -webkit-animation: transitionIn 0.7s linear;
-  animation: transitionIn 0.7s linear;
+  -webkit-animation: transitionIn 0.7s ease-in-out;
+          animation: transitionIn 0.7s ease-in-out;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 
 .transition-8 {
-  -webkit-animation: transitionIn 0.8s linear;
-  animation: transitionIn 0.8s linear;
+  -webkit-animation: transitionIn 0.8s ease-in-out;
+          animation: transitionIn 0.8s ease-in-out;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 .transition-9 {
-  -webkit-animation: transitionIn 0.9s linear;
-  animation: transitionIn 0.9s linear;
+  -webkit-animation: transitionIn 0.9s ease-in-out;
+          animation: transitionIn 0.9s ease-in-out;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 
 @-webkit-keyframes transitionIn {
   from {
-    -webkit-transform: scale(0);
-    transform: scale(0);
+    opacity: 0;
   }
   to {
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    opacity: 1;
   }
 }
 
 @keyframes transitionIn {
   from {
-    -webkit-transform: scale(0);
-    transform: scale(0);
+    opacity: 0;
   }
   to {
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    opacity: 1;
   }
 }
 
@@ -228,73 +313,73 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-animation: fadeout 0s 3s forwards;
-  animation: fadeout 0s 3s forwards;
+          animation: fadeout 0s 3s forwards;
 }
 
 .spinner {
   -webkit-animation: rotate 6s linear infinite;
-  animation: rotate 6s linear infinite;
+          animation: rotate 6s linear infinite;
   -webkit-transform-origin: bottom top;
-  transform-origin: bottom top;
+          transform-origin: bottom top;
 }
 
 .circle {
   -webkit-animation: grow 1.5s linear infinite;
-  animation: grow 1.5s linear infinite;
-  background-color: #ff79da;
+          animation: grow 1.5s linear infinite;
+  background-color: #FF79DA;
   border-radius: 50%;
   margin: 10px;
   height: 55px;
   width: 55px;
   -webkit-transform: scale(0);
-  transform: scale(0);
+          transform: scale(0);
 }
 
 .circle:nth-of-type(2) {
   -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-  background-color: #9356dc;
+          animation-delay: 1s;
+  background-color: #9356DC;
   margin: 10px;
 }
 
 .circle:nth-of-type(3) {
   -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-  background-color: #99e2d0;
+          animation-delay: 0.5s;
+  background-color: #99E2D0;
   margin: 10px;
 }
 
 @-webkit-keyframes rotate {
   to {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes rotate {
   to {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @-webkit-keyframes grow {
   50% {
     -webkit-transform: scale(0.75);
-    transform: scale(0.75);
+            transform: scale(0.75);
   }
 }
 
 @keyframes grow {
   50% {
     -webkit-transform: scale(0.75);
-    transform: scale(0.75);
+            transform: scale(0.75);
   }
 }
 
@@ -325,7 +410,7 @@ body {
   max-height: 32rem;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 /* Menu container */
@@ -343,11 +428,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu__title {
@@ -362,18 +447,18 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer;
   position: relative;
 }
 
 .menu__like:hover {
   font-weight: bold;
-  color: #9356dc;
+  color: #9356DC;
 }
 
 .submenu {
@@ -408,31 +493,36 @@ body {
   border-radius: 0.75rem;
   margin: 1rem 0;
   -webkit-box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
   height: 3.5em;
+  margin: 1rem auto;
 }
 
 .menuItem__header {
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .menuItem__title {
-  margin: 0.5em 0 0 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 
 .menuItem__description {
-  margin-top: 0.5em;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin-top: 10px;
 }
 
 .menuItem__price {
@@ -441,11 +531,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding-left: 0.5rem;
 }
 
@@ -457,11 +547,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .menuItem__icon {
@@ -474,11 +564,11 @@ body {
   height: 1.9em;
   width: 1.9em;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .wrapBtn {
@@ -487,8 +577,8 @@ body {
   display: flex;
   text-decoration: none;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0 0 2rem 0;
 }
 
@@ -500,26 +590,10 @@ body {
   border-radius: 100px;
   color: #fff;
   background-color: #686868;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#9356dc),
-    color-stop(#b35cdc),
-    color-stop(#cf64dc),
-    color-stop(#e86edb),
-    to(#ff79da)
-  );
-  background-image: linear-gradient(
-    to bottom,
-    #9356dc,
-    #b35cdc,
-    #cf64dc,
-    #e86edb,
-    #ff79da
-  );
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+  background-image: linear-gradient(to bottom, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
+          transition-duration: 0.25s;
   cursor: pointer;
 }
 
@@ -527,8 +601,8 @@ body {
   background-color: #ae80e5;
   background-blend-mode: lighten;
   -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
   -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
+          transition-duration: 0.25s;
 }
 /*# sourceMappingURL=menus.css.map */

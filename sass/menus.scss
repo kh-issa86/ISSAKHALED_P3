@@ -79,22 +79,30 @@
   overflow: hidden;
   cursor: pointer;
   height: 3.5em;
+  margin: 1rem auto;
+
 
   &__header {
     align-items: center;
     width: 100%;
+    flex: 1;
   }
   &__title {
-    margin: 0.5em 0 0 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    margin-top: 5px;
+    margin-bottom: 0;
+
+    // font-size: 15px;
   }
   &__description {
-    margin-top: 0.5em;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    margin-top: 10px;
+
+    // font-size: 13px;
   }
   &__price {
     font-weight: 700;

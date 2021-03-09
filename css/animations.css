@@ -1,26 +1,22 @@
 .menuItem:hover .menuItem__icon {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-  -webkit-transition-duration: 0.7s;
-          transition-duration: 0.7s;
+  -webkit-transition-duration: .9s;
+          transition-duration: .9s;
 }
 
 .menuItem:hover > .menuItem__confirmation {
-  -webkit-transform: translateX(0rem);
-          transform: translateX(0rem);
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: -webkit-transform 0.7s;
-  transition: transform 0.7s;
-  transition: transform 0.7s, -webkit-transform 0.7s;
+  -webkit-transform: translateX(-5rem);
+          transform: translateX(-5rem);
+  -webkit-transition: .7s ease-in-out;
+  transition: .7s ease-in-out;
 }
 
 .menuItem:hover > .menuItem__price {
-  -webkit-transform: translateX(0rem);
-          transform: translateX(0rem);
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: -webkit-transform 0.7s;
-  transition: transform 0.7s;
-  transition: transform 0.7s, -webkit-transform 0.7s;
+  -webkit-transform: translateX(-5rem);
+          transform: translateX(-5rem);
+  -webkit-transition-duration: .7s;
+          transition-duration: .7s;
 }
 
 .menuItem:hover > .menuItem__header {
@@ -28,74 +24,90 @@
 }
 
 .transition-0 {
-  -webkit-animation: transitionIn 0s linear;
-          animation: transitionIn 0s linear;
+  -webkit-animation: transitionIn 0s ease-in-out;
+          animation: transitionIn 0s ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .transition-1 {
-  -webkit-animation: transitionIn 0.1s linear;
-          animation: transitionIn 0.1s linear;
+  -webkit-animation: transitionIn 0.1s ease-in-out;
+          animation: transitionIn 0.1s ease-in-out;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
 .transition-2 {
-  -webkit-animation: transitionIn 0.2s linear;
-          animation: transitionIn 0.2s linear;
+  -webkit-animation: transitionIn 0.2s ease-in-out;
+          animation: transitionIn 0.2s ease-in-out;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 .transition-3 {
-  -webkit-animation: transitionIn 0.3s linear;
-          animation: transitionIn 0.3s linear;
+  -webkit-animation: transitionIn 0.3s ease-in-out;
+          animation: transitionIn 0.3s ease-in-out;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 .transition-4 {
-  -webkit-animation: transitionIn 0.4s linear;
-          animation: transitionIn 0.4s linear;
+  -webkit-animation: transitionIn 0.4s ease-in-out;
+          animation: transitionIn 0.4s ease-in-out;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 .transition-5 {
-  -webkit-animation: transitionIn 0.5s linear;
-          animation: transitionIn 0.5s linear;
+  -webkit-animation: transitionIn 0.5s ease-in-out;
+          animation: transitionIn 0.5s ease-in-out;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .transition-6 {
-  -webkit-animation: transitionIn 0.6s linear;
-          animation: transitionIn 0.6s linear;
+  -webkit-animation: transitionIn 0.6s ease-in-out;
+          animation: transitionIn 0.6s ease-in-out;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 .transition-7 {
-  -webkit-animation: transitionIn 0.7s linear;
-          animation: transitionIn 0.7s linear;
+  -webkit-animation: transitionIn 0.7s ease-in-out;
+          animation: transitionIn 0.7s ease-in-out;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 
 .transition-8 {
-  -webkit-animation: transitionIn 0.8s linear;
-          animation: transitionIn 0.8s linear;
+  -webkit-animation: transitionIn 0.8s ease-in-out;
+          animation: transitionIn 0.8s ease-in-out;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 .transition-9 {
-  -webkit-animation: transitionIn 0.9s linear;
-          animation: transitionIn 0.9s linear;
+  -webkit-animation: transitionIn 0.9s ease-in-out;
+          animation: transitionIn 0.9s ease-in-out;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 
 @-webkit-keyframes transitionIn {
   from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    opacity: 0;
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    opacity: 1;
   }
 }
 
 @keyframes transitionIn {
   from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    opacity: 0;
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    opacity: 1;
   }
 }
 
