@@ -167,6 +167,8 @@
         &:hover {
           font-weight: bold;
           color: $color-primary;
+          animation: fill .5s ease-in-out;
+    
         }
       }
     }

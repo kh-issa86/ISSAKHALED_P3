@@ -42,6 +42,8 @@
     &:hover {
       font-weight: bold;
       color: $color-primary;
+      animation: fill .6s ease-in-out;
+
     }
   }
 }

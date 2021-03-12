@@ -197,6 +197,30 @@ body {
           animation: progwidth .7s linear;
 }
 
+@-webkit-keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes progwidth {
   0% {
     width: 90%;
@@ -722,6 +746,8 @@ body {
 .restaurants__card__description__coeur:hover {
   font-weight: bold;
   color: #9356DC;
+  -webkit-animation: fill .5s ease-in-out;
+          animation: fill .5s ease-in-out;
 }
 
 .restaurants__card__nouveau {
