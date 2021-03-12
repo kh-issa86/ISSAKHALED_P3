@@ -21,6 +21,32 @@
 
 .menuItem:hover .menuItem__description, .menuItem:hover .menuItem__title {
   width: 75%;
+  -webkit-animation: progwidth .7s linear;
+          animation: progwidth .7s linear;
+}
+
+@-webkit-keyframes progwidth {
+  0% {
+    width: 90%;
+  }
+  50% {
+    width: 80%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes progwidth {
+  0% {
+    width: 90%;
+  }
+  50% {
+    width: 80%;
+  }
+  100% {
+    width: 75%;
+  }
 }
 
 .transition-0 {
