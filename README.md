@@ -1,5 +1,7 @@
+# OhMyFood #
+
 # Project 3 at OpenClassrooms - web developer: Boosting a website with CSS animations
-***
+
 ### Skills assessed:
 * Implement advanced graphical CSS effects
 * Ensure the graphic consistency of a website
