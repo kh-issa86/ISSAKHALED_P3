@@ -1,4 +1,4 @@
-# Project 3 of the OpenClassrooms web developer path: Boosting a website with CSS animations
+# Project 3 at OpenClassrooms - web developer: Boosting a website with CSS animations
 ***
 ### Skills assessed:
 * Implement advanced graphical CSS effects
