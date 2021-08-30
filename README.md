@@ -1,37 +1,51 @@
-## Welcome to GitHub Pages
+# Project 3 of the OpenClassrooms web developer path: Boosting a website with CSS animations
+***
+### Skills assessed:
+* Implement advanced graphical CSS effects
+* Ensure the graphic consistency of a website
+* Set up a navigation structure for a website
 
-You can use the [editor on GitHub](https://github.com/kh-issa86/ISSAKHALED_3_11022021/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+## Goals
+1. Develop a site offering the menu of 4 major Parisian restaurants.
+2. Allow online reservations and menu composition.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+***
+### Pages to integrate:
+* Home pages
+* Menu pages (4 in total)
 
-### Markdown
+#### Animations
+##### Buttons
+* On hover, the background color of the main buttons should lighten slightly. The drop shadow will also need to be more visible.
+* Eventually, visitors will be able to save their favorite menus. For this, a heart-shaped "I like" button is present on the model. When clicked, it should gradually fill up. For this first version, the effect may appear on hover instead of on click.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+##### Home page
+* When the application has more menus, a "loading spinner" will be required. On this model, we want to have a preview. It should appear for 1 to 3 seconds when you get to the home page, cover the entire screen, and use CSS animations (no library). The design of this loader has not been defined, so any proposal is welcome as long as it is consistent with the site's graphic charter.
 
-```markdown
-Syntax highlighted code block
+##### Menu pages
+* On arrival on the page, the dishes should appear gradually with a slight time lag. They can either appear one by one, or by group “Starters”, “Main courses” and “Desserts”.
+* The visitor can add the dishes he wants to his order by clicking on it. This brings up a small check mark to the right of the dish. This check mark should slide from right to left. For this first version, the effect may appear when hovering instead of clicking. If the title of the dish is too long, it will need to be cropped with ellipses.
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+## Technologies
+***
+* Allowed: HTML, CSS, CSS preprocessor (ex: Sass)
+* Forbidden: JavaScript, inline CSS
 
-1. Numbered
-2. List
+### Graphic identity
 
-**Bold** and _Italic_ and `Code` text
+Fonts:
+* Logo and titles: Shrikhand
+* Text: Roboto
 
-[Link](url) and ![Image](src)
-```
+Colors:
+* Primary: # 9356DC
+* Secondary: # FF79DA
+* Tertiary: # 99E2D0
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kh-issa86/ISSAKHALED_3_11022021/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Compatibility
+On tablet and desktop, the site will have to adapt, but since these media are not a priority, their layout is free.
+* The entire site must be responsive on mobile, tablet and desktop.
+* Pages will need to pass W3C validation in HTML and CSS without errors.
+* The site must be fully compatible with the latest desktop versions of
+Chrome and Firefox.
